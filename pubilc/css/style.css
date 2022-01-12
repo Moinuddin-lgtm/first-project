@@ -1,0 +1,319 @@
+/* import fonts from google fonts  */
+
+/* yeseva one  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Yeseva+One&display=swap');
+
+/* poppins  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Yeseva+One&display=swap');
+
+/* base  */
+*,
+*::after,
+*::before {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-size: 16px;
+    font-family: 'Poppins',sans-seri;
+    color: #13103A;
+}
+a{
+    text-decoration: none;
+    color: #13103A;
+}
+section{
+    padding: 3rem 0rem;
+}
+
+/* common classes  */
+.container{
+    max-width: 1270px;
+    margin: auto;
+}
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+}
+.colorize{
+    color: #FFAD5A;
+}
+.common-btn{
+    position: relative;
+    padding: .8rem 2.5rem;
+    display: inline-block;
+    background: #FF5959;
+    color: #fff;
+    border-radius: 5px;
+    text-transform: capitalize;
+    margin: .4rem 0rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    transition: all 0.3s ;
+}
+.common-btn:hover{
+    background: #dd2e2e;
+}
+
+/* 
+Overall Root Projects Style 
+*/
+
+
+/* Hero Area  */
+.hero-area{
+    position: relative;
+}
+.hero-area .hero-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.hero-content .left-content{
+    width: 45%;
+    position: relative;
+}
+.left-content h1{
+    font-size: 65px;
+    color: #13103A;
+    font-family: 'Yeseva One',cursive;
+    line-height: 1.4;
+    padding-left: 1.3rem;
+    position: relative;
+    opacity: 0.9;
+}
+.left-content h1 span.line{
+    width: 5px;
+    height: 77%;
+    background: #FF5959;
+    position: absolute;
+    left: 0%;
+    top: 50%;
+    transform: translateY(-50%); /* sorry! I was no Idea */
+    border-radius: 50px;
+}
+.left-content p.desc{
+    margin: 1rem 0rem;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #13103A;
+}
+
+.left-content span.text{
+    display: block;
+    margin: 1rem 0rem;
+    font-size: 18px;
+}
+
+.hero-content .right-content{
+    width: 40%;
+    position: relative;
+}
+
+
+/* Mission part style  */
+.mission-area{
+    position: relative;
+}
+.mission-wrapper .section-title{
+    text-align: center;
+    font-size: 3.5rem;
+    color: #13103A;
+}
+
+.mission-wrapper .mission-content{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 2.5rem;
+}
+.mission-content .mission-box{
+    margin: 1rem;
+    position: relative;
+    padding: 2rem;
+    border-radius: 25px;
+    padding-bottom: 2.5rem;
+}
+.bluish{
+     background: #ECF5F6;
+}
+.radish{
+    background: #FFEEEE;
+}
+.yellowish{
+    background: #FFF5D8;
+}
+.mission-box img{
+    max-width: 55%;
+    margin-bottom: .6rem;
+}
+.mission-box .title{
+    font-size: 1.7rem;
+    margin-bottom: .6rem;
+    color: #13103A;
+    font-weight: 600;
+}
+
+.mission-box p{
+    font-size: 17px;
+}
+
+
+
+/* Commons Section Style  */
+.common-area{
+    position: relative;
+    padding: 4rem 0rem;
+}
+.common-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.common-content .left-content{
+    position: relative;
+    width: 35%;
+}
+
+.common-content .right-content{
+    width: 58%;
+    position: relative;
+}
+.common-content .right-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: .6rem;
+    color: #333333;
+}
+.common-content .right-content p{
+    font-size: 18px;
+    color: #3E3E3E;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+
+img.img-fluid.shape {
+    position: absolute;
+    z-index: -1;
+    max-width: 52%;
+}
+img.img-fluid.shape-p-top {
+    top: -20%;
+    left: -20%;
+}
+img.img-fluid.shape-p-bottom{
+    bottom: -20%;
+    right: -20%;
+}
+
+
+/* bonus section style  */
+
+.blog-area{
+    position: relative;
+    padding-bottom: 2rem;
+}
+.blog-area .blog-wrapper h1{
+    font-size: 2.3rem;
+    color: #333333;
+}
+
+.blog-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.blog-content .single-blog{
+    position: relative;
+    margin: 1rem;
+    cursor: pointer;
+    user-select: none;
+    background: #ECF5F6;
+    padding: 1rem;
+    border-radius: 10px;
+}
+.single-blog .blog-img{
+    border-radius: 10px;
+    overflow: hidden;
+}
+.blog-img img{
+    object-fit: cover;
+}
+
+
+
+/* footer section style  */
+.footer-area{
+    position: relative;
+    text-align: center;
+    background: #0B0D17;
+    color: #fff;
+    padding: 3rem 0rem;
+}
+.footer-content h1{
+    position: relative;
+   font-family: 'Yeseva One',cursive;
+   font-size: 2.5rem;
+   font-style: italic;
+   margin-bottom: 1.5rem;
+}
+
+.footer-content .copyright-text{
+    color: #FFF5D8;
+}
+
+
+
+
+
+
+/* Responsive Style Start Here  */
+
+@media (max-width: 1270px) {
+    .container{
+        max-width: 100%;
+        padding: 0rem 1rem;
+    }
+    .left-content h1{
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .hero-content{
+        flex-direction: column;
+    }
+    .hero-content .left-content ,
+     .hero-content .right-content {
+        width: 100%;
+    }
+    .left-content h1 {
+        font-size: 40px;
+    }
+
+    .mission-content,
+    .blog-content,
+    .common-content{
+        flex-direction: column;
+    }
+    .common-content .left-content ,
+     .common-content .right-content {
+        width: 100%;
+    }
+    .single-blog,
+    .single-blog img{
+        width: 100%;
+    }
+
+    img.img-fluid.shape-p-bottom {
+        bottom: -20%;
+        right: 0%;
+    }
+
+}
